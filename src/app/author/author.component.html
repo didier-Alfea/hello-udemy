@@ -1,0 +1,6 @@
+<h2> {{ nbAuthors }} Authors</h2>
+<ul>
+  <li *ngFor="let author of authors">{{ author }}</li>
+</ul>
+<button class="btn btn-primary" [class.active]="isActive">Hello</button>
+<button class="btn btn-default"  (click)="onSave($event)">Save</button>
